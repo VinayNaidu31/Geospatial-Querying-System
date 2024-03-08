@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatial Querying System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e1f5e1 url("https://as2.ftcdn.net/v2/jpg/02/32/85/37/1000_F_232853754_JODaBf7QkU9P0COFljjZk5YvyLou6jpF.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #041E42;
+            color: white;
+            font-size: 25px;
+			font-family: 'Pacifico', cursive, sans-serif; /* Custom font stack */
+            text-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.5); /* Adding a subtle text shadow */
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            max-height: 120px;
+            border-radius: 15%; /* Make the logo square with circular edges */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Add an all-around shadow */
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        section {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        header h1:hover{
+			transform: scale(1.05);
+		}
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 10px;
+        }
+
+        /* Additional Styles for Types of National Parks Section */
+        #types {
+            color: #4CAF50;
+        }
+
+        /*.park-container {
+            flex: 0 1 45%;
+            margin: 10px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }*/
+
+        #contact {
+			margin-top: 40px;
+			margin-bottom: 40px;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 15px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			max-width: 900px;
+			margin: 40px auto;
+			text-align: center;
+		}
+
+        .popup:hover{
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://w7.pngwing.com/pngs/159/440/png-transparent-indonesia-badan-informasi-geospasial-geospatial-analysis-technology-information-big-electronics-logo-sphere-thumbnail.png" alt="Geospatial Querying System">
+        <h1>Geospatial Querying System</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#query">Query</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="home">
+        <h2><u>About Our Website</u></h2>
+        <p>
+            Welcome to our geospatial querying system! Our website is designed to help users explore and retrieve information about geographic locations using natural language queries.
+        </p>
+    </section>
+
+    <section id="about">
+        <h2><u>Mission Statement:</u></h2>
+        <p>
+            Our mission is to provide an intuitive and user-friendly platform for querying geospatial information. We aim to make it easy for users to ask questions about places and receive accurate and relevant answers.
+        </p>
+        
+    </section>
+
+    <section id="features">
+		<h2 style="color: #4CAF50;"><u>Features:</u></h2>
+
+		<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+			<div style="flex: 0 1 45%; margin: 10px; padding: 15px; background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" class="popup">
+				<h3 style="color: #4CAF50;">Natural Language Queries:</h3>
+				<p>
+                    Natural Language Queries: Our system allows users to input queries in natural language, making it easy for anyone to interact with the platform.
+                    Fuzzy Matching: We employ advanced fuzzy matching techniques to identify and map variations of place names to their canonical forms, ensuring accurate results even with spelling errors or alternate spellings.                
+				</p>
+			</div>
+
+			<div style="flex: 0 1 45%; margin: 10px; padding: 15px; background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" class="popup">
+				<h3 style="color: #4CAF50;">Comprehensive Database:</h3>
+				<p>
+                    Our database contains a vast collection of place names from around the world, including countries, cities, states, and more.
+				</p>
+			</div>
+
+			<div style="flex: 0 1 45%; margin: 10px; padding: 15px; background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" class="popup">
+				<h3 style="color: #4CAF50;"> Responsive Design:</h3>
+				<p>
+					Our website is designed to be responsive and accessible on all devices, ensuring a seamless user experience whether you're using a desktop computer, tablet, or smartphone.
+				</p>
+			</div>
+
+			<div style="flex: 0 1 45%; margin: 10px; padding: 15px; background-color: rgba(255, 255, 255, 0.9); border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" class="popup">
+				<h3 style="color: #4CAF50;">User Feedback:</h3>
+				<p>
+					We value user feedback and continuously strive to improve our system based on user suggestions and requirements.
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+    <section id="query">
+        <h2><u>How It Works:</u></h2>
+        
+        <ul>
+            <li><b>Input Query:</b> Users can simply enter their queries into the provided form, asking questions or providing instructions related to geographic locations.</li>
+            <li><b>Processing:</b> Our system processes the user's query, identifying relevant place names and performing fuzzy matching to map them to canonical forms.</li>
+            <li><b>Results Display:</b> The results of the query are displayed to the user, providing information about the identified places and relevant data associated with them.</li>            
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2><u>Get In Touch</u></h2>
+        <p>We're always here to help! If you have any questions, feedback, or suggestions for improvement, please don't hesitate to contact us.</p>
+        <p>Email: <a href="mailto:info@geospatialquerying.org">info@nationalparksconservation.org</a></p>
+        <p>Phone: +91 123 456 7890</p>
+        <p>Thank you for using our geospatial querying system. We hope you find it helpful and informative!</p>
+    </section>
+
+    <footer>
+        <p>&copy; | 2024 Geospatial Querying System. All rights reserved. |</p>
+    </footer>
+	
+</body>
+
+</html>
